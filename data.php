@@ -1,8 +1,8 @@
 <?php
-    $servername = "localhost:8888";
+    $servername = "localhost:3306";
     $username = "root";
     $password = "";
-    $database = "montanamaster";
+    $database = "bookings";
 
     $conn = new mysqlin($servername,$username,$password,$database);
 
@@ -18,7 +18,7 @@
 
 
     //Insert data into database
-    $sql = "INSERT INTO booking (id,name,email,phone,class_level)
+    $sql = "INSERT INTO bookings (id,name,email,phone,class_level)
     VALUES ('$id', '$name', '$email', '$phone', '$class_level')";
 
     if ($conn->query($sql) === TRUE) {
