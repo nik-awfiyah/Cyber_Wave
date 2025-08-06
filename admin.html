@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CyberWave Academy</title>
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .admin-header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .admin-section {
+            padding: 30px;
+        }
+        .admin-card {
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .admin-card:hover {
+            transform: scale(1.03);
+        }
+        .logout-btn {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="admin-header position-relative">
+        <h1>Admin Dashboard</h1>
+        <a href="index.html" class="btn btn-danger logout-btn">Logout</a>
+    </div>
+
+    <!-- Main Admin Content -->
+    <div class="container admin-section">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="admin-card">
+                    <i class="fa fa-users fa-3x mb-3 text-primary"></i>
+                    <h4>Manage Students</h4>
+                    <p>View or update student records.</p>
+                    <a href="students.html" class="btn btn-primary btn-sm">Go</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="admin-card">
+                    <i class="fa fa-book fa-3x mb-3 text-success"></i>
+                    <h4>Manage Classes</h4>
+                    <p>Add, update, or remove classes.</p>
+                    <a href="classes.html" class="btn btn-success btn-sm">Go</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="admin-card">
+                    <i class="fa fa-calendar fa-3x mb-3 text-warning"></i>
+                    <h4>Bookings</h4>
+                    <p>Check class bookings and details.</p>
+                    <a href="bookings.html" class="btn btn-warning btn-sm">Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
